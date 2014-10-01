@@ -1,0 +1,372 @@
+.spacer {
+	height: 37px;
+	width: 100%;
+}
+
+.summary:hover {
+	background: rgba(0,0,0,.08);
+}
+
+.summary {
+	height: 22px;
+	clear: both;
+	padding: 10px 30px 7px;
+}
+
+.summary .checkboxes {
+	display: block;
+	float: left;
+	min-width: 90px;
+	width: 8%;
+	height: 22px;
+}
+
+i.fa.fa-circle {
+	font-size: 1.1em;
+	visibility: hidden;
+	display: inline;
+	float: left;
+	margin: 2px 0 0 28px;
+	color: rgba(0,0,0, .15);
+}
+
+i.fa.fa-star {
+	font-size: 1.2em;
+	visibility: hidden;
+	display: inline;
+	float: left;
+	margin: 1px 0 0 15px;
+	color: rgba(0,0,0, .15);
+}
+
+.summary input {
+	margin-left: 60px;
+	margin-top: 5px;
+}
+
+.summary a {
+	display: block;
+	float: left;
+	width: 15%;
+	padding-top: 4px;
+}
+
+.summary h1 {
+	color: #666666;
+	display: block;
+	float: left;
+	min-width: 35%;
+	padding-top: 4px;
+}
+
+.summary p {
+	color: #666666;
+	display: block;
+	float: right;
+	padding-top: 4px;
+}
+
+.summary i {
+	color: #999;
+	display: block;
+	float: right;
+	min-width: 2%;
+	padding-top: 1px;
+	font-size: 1.3em;
+	margin-right: 50px;
+	margin-left: 10px;
+}
+
+.showmessage {
+	background: white;
+	/*border-top: 1px solid rgba(0,0,0,.12);
+	border-bottom: 1px solid rgba(0,0,0,.12);*/
+	overflow: hidden;
+	box-shadow : inset 0px 11px 8px -10px #888, inset 0px -11px 8px -10px #999; 
+	display: none;
+}
+
+/*.closedivbutton:hover {
+	color: #E78776;
+	background: #FFD5C9;
+}*/
+
+.closedivbutton {
+	height: 35px;
+	text-align: center;
+	color: rgba(0,0,0,0.15);
+}
+
+.closedivbutton p {
+	padding-top: 12px;
+}
+
+.showmessage .messagediv {
+	padding: 0 40px 10px;
+}
+
+.optionsmodule {
+	height: 28px;
+	
+}
+
+ul.detailsmodule {
+	display: block;
+	float: left;
+}
+
+.details a:hover {
+	color: rgba(0,0,0,0.55);
+}
+
+.details a {
+	color: rgba(0,0,0,0.35);
+}
+
+/* Div containing the "details" button content.*/
+
+.expand_details {
+	height: 60px;
+	display: none;
+}
+
+.lineonediv {
+	min-width: 200px;
+	max-width: 50%;
+	height: 35px;
+	display: block;
+	float: left;
+}
+
+.linetwodiv {
+	min-width: 200px;
+	max-width: 50%;
+	height: 35px;
+	display: block;
+	float: left;
+}
+
+/*ULs with details*/
+
+.expand_details ul {
+	line-height: 2;
+	color: rgba(0,0,0,0.35);
+	margin-top: 10px;
+}
+
+strong {
+	font-weight: bold;
+	margin-left: 5px;
+	color: #666;
+}
+
+
+
+li.details {
+	margin-top: 8px;
+}
+
+.replymodule {
+	position: relative;
+	float: right;
+	margin-right: 116px;
+}
+
+.replymodule li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 0;
+}
+
+.replymodule li, .replymodule a {
+	height: 27px;
+	display: block;
+}
+
+.reply {
+	left: 0px;
+	width: 40px;
+}
+
+.reply {
+	background: url('../images/image_sprite.png') 0 0;
+}
+
+.reply:hover {
+	background: url('../images/hover_buttons/image_sprite_hover.png') 0 0;
+}
+
+.reply:active {
+	background: url('../images/active_buttons/image_sprite_active.png') 0 0;
+}
+
+.replymenu {
+	left:39px;
+	width:40px;
+}
+
+.replymenu {
+	background:url('../images/image_sprite.png') -39px 0;
+}
+
+.replymenu:hover {
+	background: url('../images/hover_buttons/image_sprite_hover.png') -39px 0;
+	z-index: 1;
+}
+
+.replymenu:active {
+	background: url('../images/active_buttons/image_sprite_active.png') -39px 0;
+	z-index: 1;
+}
+
+.closebutton {
+	left:78px;
+	width:38px;
+}
+
+.closebutton {
+	background:url('../images/image_sprite.png') -78px 0;
+}
+
+.closebutton:hover {
+	background: url('../images/hover_buttons/image_sprite_hover.png') -78px 0;
+	z-index: 1;
+}
+
+.closebutton:active {
+	background: url('../images/active_buttons/image_sprite_active.png') -78px 0;
+	z-index: 1;
+}
+
+.messagebody {
+	margin: 0 40px 20px;
+}
+
+
+.messagebody p {
+	line-height: 1.5;
+	padding-top: 20px;
+}
+
+.replydivbutton:hover {
+	background: #D1DFED;
+	color: #3366CC;
+}
+
+.replydivbutton {
+	height: 35px;
+	color: rgba(0,0,0,0.15);
+	text-align: center;
+}
+
+.replydivbutton p {
+	padding-top: 10px;
+}
+
+.replybox {
+	height: 90px;
+	margin: 30px 0 80px;
+	display: none;
+}
+
+.replybox2 {
+	display: none;
+	margin: 20px 0 0;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+textarea {
+	width: 98%;
+	max-width: 98%;
+	border: 1px solid rgba(0,0,0,0.25);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+.replyicons {
+	height: 45px;
+	margin-left: 3px;
+}
+
+.replylist li {
+	display: block;
+	float: left;
+	margin: 3px 5px 0 0;
+}
+
+.replylist li.send:hover {
+	background: url('../images/hover_buttons/sendbutton_hover.png');
+	height: 27px;
+	width: 72px;
+}
+
+.replylist li.format:hover {
+	background: url('../images/hover_buttons/formatbutton_hover.png');
+	height: 27px;
+	width: 37px;
+}
+
+.replylist li.attach:hover {
+	background: url('../images/hover_buttons/attachbutton_hover.png');
+	height: 27px;
+	width: 37px;
+}
+
+.replylist li.trash:hover {
+	background: url('../images/hover_buttons/trashbutton_hover.png');
+	height: 27px;
+	width: 37px;
+}
+
+.replylist li.send {
+	background: url('../images/sendbutton.png');
+	height: 27px;
+	width: 72px;
+}
+
+.replylist li.format {
+	background: url('../images/formatbutton.png');
+	height: 27px;
+	width: 37px;
+}
+
+.replylist li.attach {
+	background: url('../images/attachbutton.png');
+	height: 27px;
+	width: 37px;
+}
+
+.replylist li.trash {
+	background: url('../images/trashbutton.png');
+	height: 27px;
+	width: 37px;
+}
+
+.active {
+	display: block;
+}
+
+.heightdiv {
+	height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

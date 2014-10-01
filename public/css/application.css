@@ -1,0 +1,362 @@
+body {
+	background: #F8F8F8;
+	font-family: sans-serif;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #3366CC;
+}
+
+.navbar {
+	height: 37px;
+	width: 100%;
+	background: url('../images/nav_texture.png');
+	background-repeat: repeat-x;
+	position: fixed;
+}
+
+.navlist img {
+	display: block;
+	float: left;
+	margin: 5px 0;
+}
+
+li.menubutton:hover {
+	height: 26px;
+	width: 29px;
+	background: url('../images/hover_buttons/menu_button_hover.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.menubutton:active {
+	height: 26px;
+	width: 29px;
+	background: url('../images/active_buttons/menu_button_active.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.checkbutton:hover {
+	height: 26px;
+	width: 36px;
+	background: url('../images/hover_buttons/check_button_hover.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.checkbutton:active {
+	height: 26px;
+	width: 36px;
+	background: url('../images/active_buttons/check_button_active.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.composebutton:hover {
+	height: 26px;
+	width: 36px;
+	background: url('../images/hover_buttons/compose_button_hover.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.composebutton:active {
+	height: 26px;
+	width: 36px;
+	background: url('../images/active_buttons/compose_button_active.png');
+	border-right: 1px solid #333;
+	border-radius: 4px;
+}
+
+li.username:hover {
+	height: 26px;
+	width: 91px;
+	background: url('../images/hover_buttons/username_hover.png');
+	border-radius: 4px;
+}
+
+li.username:active {
+	height: 26px;
+	width: 91px;
+	background: url('../images/active_buttons/username_active.png');
+	border-radius: 4px;
+}
+
+li.menubutton {
+	display: block;
+	float: left;
+	height: 26px;
+	width: 30px;
+	background: url('../images/menu_button.png');
+	margin: 5px 5px 0 10px;
+}
+
+li.checkbutton {
+	display: block;
+	float: left;
+	height: 26px;
+	width: 37px;
+	background: url('../images/check_button.png');
+	margin: 5px 0 0 7px;
+}
+
+li.composebutton {
+	display: block;
+	float: left;
+	height: 26px;
+	width: 37px;
+	background: url('../images/compose_button.png');
+	margin: 5px 0 0 7px;
+}
+
+li.username {
+	display: block;
+	float: right;
+	height: 26px;
+	width: 91px;
+	background: url('../images/username.png');
+	margin-top: 5px;
+	margin-right: 9px;
+}
+
+.navbuttonsdiv {
+	width: 28%;
+	height: 37px;
+	display: block;
+	float: left;
+}
+
+
+.pagetitle {
+	width: 30%;
+	height: 37px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+.pagetitle p {
+	margin-top: 10px;
+	font-size: 1.2em;
+	color: #AAA;
+	font-weight: lighter;
+}
+
+.searchboxdiv {
+	width: 35%;
+	height: 37px;
+	display: block;
+	float: right;
+}
+
+input#search {
+	display: block;
+	float: right;
+	height: 17px;
+	width: 190px;
+	border-radius: 11px;
+	margin: 1px 10px 0 0;
+	border: 1px;
+}
+
+input:focus{
+	outline: none;
+}
+
+.searchbox {
+	display: block;
+	float: right;
+	height: 22px;
+	width: 225px;
+	background: white;
+	border-radius: 11px;
+	margin: 7px 10px 0 0;
+}
+
+img.searchbutton {
+	margin: 4px 0 0 6px;
+}
+
+img.username {
+	display: block;
+	float: right;
+	margin-top: 5px;
+	margin-right: 9px;
+}
+
+
+.menusdiv {
+	position: fixed;
+	width: 100%;
+}
+
+
+/* Main menu button dropdown.*/
+
+.mainmenu {
+	position: absolute;
+	height: 154px;
+	width: 135px;
+	background: white;
+	margin: 37px 0 0 11px;
+	overflow: hidden;
+	
+	border: 1px solid rgba(0,0,0,0.20);
+	display: none;
+}
+
+.mainmenulist {
+	padding: 8px 0;
+}
+
+.mainmenulist li {
+	padding-bottom: 15px;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.mainmenulist li a:hover {
+	background: rgba(0,0,0,0.15);
+}
+
+.mainmenulist li a {
+	color: #333;
+	font-weight: bold;
+	padding: 8px 100px 7px 17px;
+}
+
+
+/*Check Button menu dropdown.*/
+
+.checkmenu {
+	position: absolute;
+	left: 52px;
+	height: 154px;
+	width: 135px;
+	background: white;
+	margin: 37px 0 0 0;
+	overflow: hidden;
+	float: left;
+	border: 1px solid rgba(0,0,0,0.20);
+	display: none;
+}
+
+.checkmenulist {
+	padding: 8px 0;
+}
+
+.checkmenulist li {
+	padding-bottom: 15px;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.checkmenulist li a:hover {
+	background: rgba(0,0,0,0.15);
+}
+
+.checkmenulist li a {
+	color: #333;
+	font-weight: bold;
+	padding: 8px 100px 7px 17px;
+}
+
+
+/*Username menu dropdown.*/
+
+.usernamemenu {
+	position: absolute;
+	right: 198px;
+	height: 154px;
+	width: 135px;
+	background: white;
+	margin: 37px 0 0 52px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid rgba(0,0,0,0.20);
+	display: none;
+}
+
+.usernamemenulist {
+	padding: 8px 0;
+}
+
+.usernamemenulist li {
+	padding-bottom: 15px;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.usernamemenulist li a:hover {
+	background: rgba(0,0,0,0.15);
+}
+
+.usernamemenulist li a {
+	color: #333;
+	font-weight: bold;
+	padding: 8px 100px 7px 17px;
+}
+
+
+/*Reply menu dropdown*/
+
+.replymenuholder {
+	position: absolute;
+	width: 100%;
+}
+
+.replymenudiv {
+	position: absolute;
+	right: 80px;
+	top: -10px;
+	height: 154px;
+	width: 135px;
+	background: white;
+	margin: 15px 0 0 52px;
+	overflow: hidden;
+	display: block;
+	float: right;
+	border: 1px solid rgba(0,0,0,0.20);
+	display: none;
+}
+
+.replymenulist {
+	padding: 8px 0;
+}
+
+.replymenulist li {
+	padding-bottom: 15px;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.replymenulist li a:hover {
+	background: rgba(0,0,0,0.15);
+}
+
+.replymenulist li a {
+	color: #333;
+	font-weight: bold;
+	padding: 8px 100px 7px 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
