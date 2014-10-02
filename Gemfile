@@ -16,6 +16,8 @@ gem 'rake'
 gem 'shotgun'
 gem 'gmail'
 
+gem 'pry'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

@@ -7,11 +7,11 @@
 				<i class="fa fa-star"></i>
 			</span>
 		</div>
-		<a class="sender" href="#">Mike Jones</a>
-		<h1>I Need an Estimate for the Attached Project</h1>
-		<!-- <i></i> -->
-		<p>Today - 9:30 AM</p>
-
+		<a class="sender" href="#"><%= message.from[0].name %></a>
+		<h1><%= message.raw_message.subject %></h1>
+		<i></i>
+		<i class="fa fa-times"></i>
+		<p><%= date(message) %></p>
 	</div>
 </div>
 <div class="showmessage">
@@ -57,12 +57,10 @@
 		</div>
 		</div>
 		<div class="messagebody">
-		<p>Hello John,</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta diam ac urna bibendum iaculis. Nulla vitae dictum mi. In bibendum ligula velit, eu ultricies massa tempus in. Vestibulum non magna non lorem cursus tristique. Aenean porttitor ullamcorper metus hendrerit malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta diam ac urna bibendum iaculis.</p>
 
-		<p>Aenean porttitor ullamcorper metus hendrerit malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta diam ac urna bibendum iaculis. Nulla vitae dictum mi. In bibendum ligula velit, eu ultricies massa tempus in. Vestibulum non magna non lorem cursus tristique.</p>
-		<p>Regards,</p>
-		<p>John Smith</p>
+		<% body(message).each do |x| %>
+		<%= x %>
+		<% end %>
 		
 		<div class="replycontainer">
 			<div class="replybox">
