@@ -3,7 +3,7 @@
 	<div class="message">
 		<div class="checkboxes">
 			<span class="message_icon_span">
-				<i class="fa fa-circle"></i>
+				<i class="fa fa-square"></i>
 				<i class="fa fa-star"></i>
 			</span>
 		</div>
@@ -58,9 +58,12 @@
 		</div>
 		<div class="messagebody">
 
-		<% body(message).each do |x| %>
-		<%= x %>
-		<% end %>
+		<section class="messagebody_text">
+			<% content = message.text_part.body.raw_source.split('\n') %>
+			<% content.each do |sentence| %>
+			<p><%= sentence %></p>
+			<% end %>
+		</section>
 		
 		<div class="replycontainer">
 			<div class="replybox">

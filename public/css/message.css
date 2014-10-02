@@ -21,31 +21,43 @@
 	height: 22px;
 }
 
-i.fa.fa-circle {
-	font-size: 1.1em;
-	visibility: hidden;
+i.fa.fa-square {
+	font-size: 1em;
+	/*visibility: hidden;*/
 	display: inline;
 	float: left;
 	margin: 2px 0 0 28px;
 	color: rgba(0,0,0, .15);
 }
 
+i.fa.fa-square:hover {
+	color: #468499;
+}
+
 i.fa.fa-star {
 	font-size: 1.2em;
-	visibility: hidden;
+	/*visibility: hidden;*/
 	display: inline;
 	float: left;
 	margin: 1px 0 0 15px;
 	color: rgba(0,0,0, .15);
 }
 
+i.fa.fa-star:hover {
+	color: #f7dc0e;
+}
+
 i.fa.fa-times {
 	font-size: 1.3em;
-	visibility: hidden;
+	/*visibility: hidden;*/
 	display: inline;
 	float: right;
 	margin: 0 0 0 20px;
 	color: rgba(0,0,0, .15);
+}
+
+i.fa.fa-times:hover {
+	color: black;
 }
 
 .summary input {
@@ -253,6 +265,9 @@ li.details {
 	margin: 0 40px 20px;
 }
 
+.messagebody_text {
+	margin: 15px 0;
+}
 
 .messagebody p {
 	line-height: 1.5;

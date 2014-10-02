@@ -1,4 +1,4 @@
-def body(message)
+def msg_body(message)
 	msg_array = []
 	message_body = message.body.decoded
 	message_body.split('\n').each do |line|
